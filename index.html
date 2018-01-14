@@ -1,216 +1,25 @@
 <!DOCTYPE html>
-<html style="zoom: 1">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-  <title>MinBaek Kim</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-
-</head>
-
-<body>
-  <div class="container">
-    <br>
-    <span style="font-size:2.5em; font-weight:bold">Projects</span><br><br>
-
-    <div class="row">
-      <div class="col l6 s12">
-
-        <span style="font-size:1.5em; font-weight:bold"><i>Robotics Projects</i></span><br>
-
-        <br><span style="font-size:1.2em"><u>2017 R-BIZ Challenge Turtlebot3 Autorace</u></span><br><br>
-
-        <!--
-        <br><span style="font-size:0.9em">
-
-        description
-
-        </span><br><br>
-        -->
-
-        <div class="youtubeWrap">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/extzYBgQdGs" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <br><span style="font-size:1.2em"><u>2017 International University Students Creative Car Competition</u></span><br><br>
-
-        <div class="youtubeWrap">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Zr7umk_rSIY" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <br><span style="font-size:1.2em"><u>2016 Flying-Car PAV Contest</u></span><br><br>
-
-        <div class="youtubeWrap">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/9w7o3VyKKVg" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <br>
-      </div>
-
-      <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-
-
-      <div class="col l6 s12">
-
-        <span style="font-size:1.5em; font-weight:bold"><i>Likelion Projects</i></span><br>
-
-        <br><span style="font-size:1.2em"><u>KUT Maple Solution Site</u></span><br><br>
-
-        <div class="youtubeWrap">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/mK-msZjBlik" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <br><span style="font-size:1.2em"><u>Likelion in KUT Homepage</u></span><br><br>
-
-        <div class="youtubeWrap">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/vYo23fi4NcQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | forGameStudy</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/test_webgl.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">forGameStudy</div>
       </div>
     </div>
-
-  </div>
-
-  <footer class="page-footer blue lighten-1">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">MINBAEK KIM</h5>
-          <p class="grey-text text-lighten-4">Robotics Engineer`s portfolio</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">CONTACT</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">sherlotics@gmail.com</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      © 2017 Copyright MinBaekKim
-      <a class="grey-text text-lighten-4 right" href="https://github.com/minbaekkim">GITHUB</a>
-      </div>
-    </div>
-  </footer>
-
-  <!--
-      <div style="font-size:15px" class="col s12 l6">
-        <br>
-        <span style="font-size:1.5em; font-weight:bold">Projects</span><br><br>
-        <div class="row">
-
-
-
-           <div class="col l6">
-             <div class="card">
-                  <div class="card-image">
-                    <img src="img/sinbicar.JPG">
-                  </div>
-                  <div class="card-content">
-                    <p>위 사진은 자동차와 항공기를 융합, 미래형 자동차를 설계하는 2016 신비차 경진대회 출품작입니다.
-                      <br><br>내치기어를 이용한 미래형 자동차로 내치기어와 평기어를 직접 설계하여 바퀴를 제작하였으며 유니버셜조인트를 이용하여 축동력을 전달하였습니다.
-                      <br><br>두바퀴의 속도차이 방식으로 조향을 구현하였으며 구동부는 아두이노를 통하여 비행부는 NAZA를 이용하여 직접 구현하였습니다.
-                      <br><br>이 프로젝트의 제어팀장을 맡아서 진행하였으며 자세한 내용은 아래의 유튜브 영상 링크를 통하여 볼 수 있습니다! 감사합니다!
-                    </p>
-                  </div>
-                  <div class="card-action">
-                    <a target="_blank" href="https://www.youtube.com/watch?v=ZyyLuHegWrY">youtube video link click!</a>
-                  </div>
-                </div>
-           </div>
-
-
-
-           <div class="col l6">
-             <div class="card">
-                  <div class="card-image">
-                    <img src="img/homepage.JPG">
-                  </div>
-                  <div class="card-content">
-                    <p>Ruby on Rails ,AWS, javascript, materialize를 기반으로 만든 한국기술교육대학교 멋쟁이사자처럼 홈페이지 입니다.
-                    <br><br>평소에 프로그래밍에 관심이 많아 기계공학부에서 배우는 내용이외에 웹프로그래밍을 구글링을 통하여 제작한 경험이 있고
-                    이 경험을 통해 프로그래밍 소양을 넓힐 수 있는 계기가 되었습니다.
-                    <br><br>제작한 홈페이지와 GITHUB소스코드는 아래 링크를 통하여 볼 수 있습니다!</p>
-                  </div>
-                  <div class="card-action">
-                    <a target="_blank" href="http://kut-likelion.herokuapp.com/">Homepage link click!</a>
-                    <a target="_blank" href="https://github.com/minbaekkim/likelion_hompage">Github CODE</a>
-                  </div>
-                </div>
-            </div>
-
-
-
-
-        </div>
-        <div class="row">
-
-
-            <div class="col l6">
-              <div class="card">
-                   <div class="card-image">
-                     <img src="img/EV3.jpg">
-                   </div>
-                   <div class="card-content">
-                     <p>EV3와 mindstorm c++ programing을 이용하여 PID제어를 사용한 라인트레이싱로봇, 미로탈출 로봇등을 학기 수업 때 제작해본 경험이 있습니다.
-                     <br><br>2015년도에 했던 수업이라 소스코드와 사진을 남기지 못했습니다.</p>
-                   </div>
-                 </div>
-            </div>
-
-
-
-            <div class="col l6">
-              <div class="card">
-                   <div class="card-image">
-                     <img src="img/balancing.png">
-                   </div>
-                   <div class="card-content">
-                     <p>현재 밸런싱 로봇과 매니퓰레이터에 대한 개발을 진행하고 있습니다.
-                    <br><br>앞으로의 졸업설계로 밸런싱로봇과 매니퓰레이터를 접목한 로봇을 제작해볼 예정입니다.</p>
-                   </div>
-                 </div>
-            </div>
-
-
-          </div>
-
-          <div class="row">
-
-
-              <div class="col l6">
-                <div class="card">
-                     <div class="card-image">
-                       <img src="img/2017sinbicar.JPG">
-                     </div>
-                     <div class="card-content">
-                       <p>현재 2017 신비차 경진대회 출전할 예정입니다. 본 대회는 10월이며 졸업설계와 동시에 진행할 예정입니다.</p>
-                     </div>
-                   </div>
-              </div>
-
-
-          </div>
-         </div>
-
-
-    </div>
-  </div>
-  -->
-
-
-</body>
+  </body>
 </html>
