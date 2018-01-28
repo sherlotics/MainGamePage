@@ -1,25 +1,189 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | forGameStudy</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/test_webgl.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">forGameStudy</div>
+<html style="zoom: 1">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <title>MinBaek Kim</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+  <style>
+    .youtubeWrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+    .youtubeWrap iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="blue lighten-5">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l2">
+        </div>
+
+        <div class="col s12 l8">
+          <br><br>
+          <div class="card horizontal">
+            <div class="card-image">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                
+              </div>
+              <div class="card-action">
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col s12 l3">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div style="font-size:15px">
+            <div class="col s12 l3">
+              <span style="font-size:1.5em; font-weight:bold">Grade</span><br><br>
+              <ul>
+              </ul>
+            </div>
+
+            <div class="col s12 l3">
+              <span style="font-size:1.5em; font-weight:bold">Belong to Organization</span><br><br>
+              <ul>
+             
+              </ul>
+            </div>
+
+            <div class="col s12 l3">
+              <span style="font-size:1.5em; font-weight:bold">Internal Activity</span><br><br>
+              <ul>
+                
+              </ul>
+            </div>
+
+            <div class="col s12 l3">
+
+            <span style="font-size:1.5em; font-weight:bold">External Activity</span><br><br>
+              <ul>
+                
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <br>
+    </div>
+  </div>
+
+  <!--                           project                             -->
+
+
+  <div class="container">
+    <br>
+    <span style="font-size:2.5em; font-weight:bold">Projects</span><br><br>
+
+    <div class="row">
+      <div class="col l6 s12">
+
+        <span style="font-size:1.5em; font-weight:bold"><i>Robotics Projects</i></span><br>
+
+        <br><span style="font-size:1.2em"><u>2017 R-BIZ Challenge Turtlebot3 Autorace</u></span><br><br>
+
+        <!--
+        <br><span style="font-size:0.9em">
+
+        description
+
+        </span><br><br>
+        -->
+
+        <div class="youtubeWrap">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/extzYBgQdGs" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <br><span style="font-size:1.2em"><u>2017 International University Students Creative Car Competition</u></span><br><br>
+
+        <div class="youtubeWrap">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Zr7umk_rSIY" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <br><span style="font-size:1.2em"><u>2016 Flying-Car PAV Contest</u></span><br><br>
+
+        <div class="youtubeWrap">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9w7o3VyKKVg" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <br>
+      </div>
+
+      <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+      <div class="col l6 s12">
+
+        <span style="font-size:1.5em; font-weight:bold"><i>Likelion Projects</i></span><br>
+
+        <br><span style="font-size:1.2em"><u>KUT Maple Solution Site</u></span><br><br>
+
+        <div class="youtubeWrap">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mK-msZjBlik" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <br><span style="font-size:1.2em"><u>Likelion in KUT Homepage</u></span><br><br>
+
+        <div class="youtubeWrap">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/vYo23fi4NcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+
       </div>
     </div>
-  </body>
+
+  </div>
+
+  <footer class="page-footer blue lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">MINBAEK KIM</h5>
+          <p class="grey-text text-lighten-4">Robotics Engineer`s portfolio</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">CONTACT</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">sherlotics@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2017 Copyright MinBaekKim
+      <a class="grey-text text-lighten-4 right" href="https://github.com/minbaekkim">GITHUB</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
